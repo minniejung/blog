@@ -1,0 +1,184 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-padding-top: 50px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+  padding-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h3 {
+  border-bottom: 1px solid #999;
+}
+
+h4 {
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  border-bottom: 0.5px solid #999;
+}
+
+nav {
+  margin: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: 900;
+  padding: 8px 11px;
+  line-height: 24px;
+  border: 1px dotted lightgrey;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  border-top: 1px solid #999;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+#logo:hover {
+  color: rgb(255, 255, 157);
+  border: 1px dotted rgb(255, 255, 157);
+}
+
+nav li :hover,
+footer a:hover {
+  color: rgb(255, 255, 157);
+}
+
+main {
+  max-width: 800px;
+  padding: 0 20px 60px 20px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+section:first-child {
+  padding-top: 100px;
+}
+
+#scoby-div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.scoby-img {
+  width: 198px;
+  height: 352px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.til-keywords {
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.til-keywords span {
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.til-div {
+  padding: 0;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.til-content {
+  padding: 10px 20px;
+  line-height: 200%;
+  background-color: #191919;
+  border-radius: 10px;
+}
+
+.til-content li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.sub-li li {
+  list-style-type: circle;
+}
