@@ -16,7 +16,7 @@
       <ul>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#til">TIL</a></li>
-        <li><a href="#menu3">MENU3</a></li>
+        <li><a href="#til-js">TIL - JS</a></li>
         <li><a href="#menu4">MENU4</a></li>
         <li><a href="#scoby">SCOBY</a></li>
       </ul>
@@ -58,7 +58,7 @@
     <hr />
 
     <section id="til">
-      <h2>TIL</h2>
+      <h2>TIL - BLOCKCHAIN</h2>
 
       <div class="til-keywords">
         <span><a href="#bitcoin-blockchain">Bitcoin & Blockchain</a></span>
@@ -441,12 +441,70 @@
 
     <hr />
 
-    <section id="menu3">
-      <h2>Menu3</h2>
-      <div class="til-content">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia eligendi eveniet aspernatur expedita sint iure
-        non cumque, quis porro minima omnis voluptates dolorum dolore quidem ex beatae! Libero, non modi!
-      </div>
+    <section id="til-js">
+      <h2>TIL - JS</h2>
+
+      <section class="til-div">
+        <h3>19/02/2025</h3>
+
+        <div class="til-content">
+          <pre>
+얕은 복사는 객체의 1단계 데이터만 복사하며, 중첩된 객체나 배열은 참조(주소)만 복사합니다.
+따라서, 복사본에서 중첩 데이터를 수정하면 원본에도 영향을 미칩니다.
+e.g.
+const original = { name: "철수", info: { age: 30 } };
+const shallowCopy = { ...original }; // 얕은 복사
+shallowCopy.info.age = 31; // 중첩된 객체를 수정
+console.log(original.info.age); // 31 (원본도 영향을 받음)</pre>
+        </div>
+
+        <div class="til-content">
+          <pre>
+깊은 복사는 객체의 모든 데이터(중첩된 객체나 배열 포함)를 완전히 새로운 메모리 공간에 복사합니다. 
+복사본과 원본은 독립적이어서, 한쪽을 수정해도 다른 쪽에 영향을 미치지 않습니다.
+e.g.
+const original = { name: "철수", info: { age: 30 } };
+const deepCopy = JSON.parse(JSON.stringify(original)); // 깊은 복사</pre>
+        </div>
+        <div class="til-content">
+          <pre>
+// 문자열
+const str = "hello world";
+console.log(str.length); // 11
+console.log(str.charAt(1)); // "e"
+console.log(str.indexOf("o")); // 4
+console.log(str.slice(0, 5)); // "hello"
+console.log(str.toUpperCase()); // "HELLO WORLD"
+
+// 배열
+const arr = [1, 2, 3, 4, 5];
+console.log(arr.length); // 5
+console.log(arr[2]); // 3
+console.log(arr.slice(0, 3)); // [1, 2, 3]
+console.log(arr.map(x => x * 2)); // [2, 4, 6, 8, 10]
+console.log(arr.reduce((acc, cur) => acc + cur)); // 15
+
+// 객체
+const obj = { name: "John", age: 30 };
+console.log(obj.name); // "John"
+console.log(Object.keys(obj)); // ["name", "age"]
+console.log(Object.values(obj)); // ["John", 30]
+console.log(Object.entries(obj)); // [["name", "John"], ["age", 30]]
+console.log(JSON.stringify(obj)); // '{"name":"John","age":30}'
+
+// 숫자
+const num = 3.141592;
+console.log(num.toFixed(2)); // "3.14"
+console.log(Math.floor(num)); // 3
+console.log(Math.ceil(num)); // 4
+console.log(Math.round(num)); // 3
+
+console.log(Math.max(1, 2, 3)); // 3
+console.log(Math.random()); // 임의의 0 이상 1 미만의 숫자
+</pre>
+        </div>
+      </section>
+
     </section>
 
     <hr />
