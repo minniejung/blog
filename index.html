@@ -506,7 +506,7 @@ console.log(Math.random()); // 임의의 0 이상 1 미만의 숫자
       </section>
 
       <section class="til-div">
-        <h3>10/02/2025</h3>
+        <h3>20/02/2025</h3>
 
         <div class="til-content">
           <pre>1. 원시 타입 vs 참조 타입
@@ -525,16 +525,19 @@ let a = 10;
 if (true) {
 let b = 20;
 const c = 30;}
-console.log(a); // 10}</pre>
+console.log(a); // 10}
+</pre>
         </div>
         <div class="til-content">
-          <pre>3. 클로저
+          <pre>
+            3. 클로저
 내부 함수가 외부 함수의 변수를 기억하는 개념
 function outer(outerValue) {
 return function inner(innerValue) {
 console.log(`Outer: ${outerValue}, Inner: ${innerValue}`);};}
 const closureExample = outer("Hello");
-closureExample("World");</pre>
+closureExample("World")
+</pre>
 
         </div>
         <div class="til-content">
@@ -549,62 +552,112 @@ return numbers.reduce((acc, num) => acc + num, 0);}
 console.log(sum(1, 2, 3, 4));
 </pre>
         </div>
-
       </section>
 
-      <hr />
+      <section class="til-div">
+        <h3>21/02/2025</h3>
 
-      <section id="menu4">
-        <h2>Menu4</h2>
         <div class="til-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis libero aliquam vel fuga
-          unde sed placeat excepturi qui magnam expedita! Repellat dignissimos nam iusto dolor deserunt possimus cum,
-          alias quo!
+          <pre>DOM (Document Object Model)
+1. DOM이란?
+HTML, XML 문서의 구조를 트리 형태로 표현한 프로그래밍 인터페이스,
+이를 통해 웹 페이지의 내용과 구조를 동적으로 변경할 수 있다.
+
+2. DOM의 구조
+DOM은 계층적인 트리 구조를 가지며,
+- Document : 웹 페이지 전체를 나타내는 최상위 객체 (document 객체).
+- Element : HTML 태그 하나하나를 객체로 표현 (div, p, a 등).
+- Attribute : 요소의 속성 (id, class, src, href 등).
+- Text : 요소 안에 들어가는 텍스트 콘텐츠.
+
+3. DOM 조작
+JavaScript를 사용하여 DOM 조작
+
+e.g.
+
+✅ 요소 선택 방법
+document.getElementById("id값");
+document.querySelector(".class명");
+document.querySelectorAll("태그명");
+
+✅ 새로운 요소 추가
+const newElement = document.createElement("div");
+newElement.textContent = "새로운 요소";
+document.body.appendChild(newElement);
+
+✅ 요소 삭제
+const element = document.getElementById("id값");
+element.remove();
+
+✅ 스타일 변경
+element.style.color = "red";
+
+✅ 이벤트 리스너 추가
+element.addEventListener("click", () => {
+  alert("클릭됨!");
+});
+</pre>
         </div>
+
+        <!-- <div class="til-content">
+          <pre></pre>
+        </div> -->
       </section>
+    </section>
 
-      <hr />
+    <hr />
 
-      <section id="scoby">
-        <h2>SCOBY THE CAT 👑</h2>
+    <section id="menu4">
+      <h2>Menu4</h2>
+      <div class="til-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis libero aliquam vel fuga
+        unde sed placeat excepturi qui magnam expedita! Repellat dignissimos nam iusto dolor deserunt possimus cum,
+        alias quo!
+      </div>
+    </section>
 
-        <br />
+    <hr />
 
-        <ul>
-          <li>Princess</li>
-          <li>Born in 16/07/2021 🇫🇷</li>
-          <li>Siamese & Birman mix</li>
-        </ul>
+    <section id="scoby">
+      <h2>SCOBY THE CAT 👑</h2>
 
-        <br />
+      <br />
 
-        <div id="scoby-div">
-          <img src="/assets/1.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/2.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/3.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/4.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/5.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/6.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/7.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/8.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/9.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/10.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/11.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/12.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/13.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/14.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/15.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/16.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/17.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/18.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/19.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/20.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/21.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/22.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/23.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/24.jpeg" alt="scoby" class="scoby-img" />
-        </div>
-      </section>
+      <ul>
+        <li>Princess</li>
+        <li>Born in 16/07/2021 🇫🇷</li>
+        <li>Siamese & Birman mix</li>
+      </ul>
+
+      <br />
+
+      <div id="scoby-div">
+        <img src="/assets/1.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/2.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/3.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/4.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/5.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/6.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/7.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/8.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/9.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/10.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/11.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/12.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/13.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/14.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/15.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/16.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/17.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/18.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/19.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/20.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/21.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/22.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/23.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/24.jpeg" alt="scoby" class="scoby-img" />
+      </div>
+    </section>
   </main>
 
   <footer>
