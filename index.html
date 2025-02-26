@@ -598,15 +598,10 @@ element.addEventListener("click", () => {
 });
 </pre>
         </div>
-
-        <!-- <div class="til-content">
-          <pre></pre>
-        </div> -->
       </section>
 
       <section class="til-div">
         <h3>24/02/2025</h3>
-
         <div class="til-content">
           <pre>
 일급 객체(first-class citizen)
@@ -639,7 +634,6 @@ element.addEventListener("click", () => {
 
       <section class="til-div">
         <h3>25/02/2025</h3>
-
         <div class="til-content">
           <pre>
 OOP, Object-oriented programming
@@ -672,59 +666,112 @@ OOP, Object-oriented programming
         </div>
       </section>
 
-      <hr />
+      <section class="til-div">
+        <h3>26/02/2025</h3>
 
-      <section id="menu4">
-        <h2>Menu4</h2>
         <div class="til-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis libero aliquam vel fuga
-          unde sed placeat excepturi qui magnam expedita! Repellat dignissimos nam iusto dolor deserunt possimus cum,
-          alias quo!
+          <pre>
+[Promise (new Promise)]
+
+e.g.
+let promise = new Promise((resolve, reject) => {
+	// 1. 정상적으로 처리되는 경우
+	// resolve의 인자에 값을 전달할 수도 있습니다.
+	resolve(value);
+
+	// 2. 에러가 발생하는 경우
+	// reject의 인자에 에러메세지를 전달할 수도 있습니다.
+	reject(error);
+});
+</pre>
+
+          <pre>
+[Promise chaining with then, catch, finally]
+
+e.g.
+let promise = new Promise(function(resolve, reject) {
+	resolve('성공');
+	...
+});
+
+promise
+  .then((value) => {
+    console.log(value);
+    return '성공';
+  })
+  .then((value) => {
+    console.log(value);
+    return '성공';
+  })
+  .then((value) => {
+    console.log(value);
+    return '성공';
+  })
+  .catch((error) => {
+    console.log(error);
+    return '실패';
+  })
+  .finally(() => {
+    console.log('성공이든 실패든 작동!');
+  });
+          </pre>
         </div>
       </section>
+    </section>
 
-      <hr />
+    <hr />
 
-      <section id="scoby">
-        <h2>SCOBY THE CAT 👑</h2>
+    <section id="menu4">
+      <h2>Menu4</h2>
+      <div class="til-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis libero aliquam vel fuga
+        unde sed placeat excepturi qui magnam expedita! Repellat dignissimos nam iusto dolor deserunt possimus cum,
+        alias quo!
+      </div>
+    </section>
 
-        <br />
+    <hr />
 
-        <ul>
-          <li>Princess</li>
-          <li>Born in 16/07/2021 🇫🇷</li>
-          <li>Siamese & Birman mix</li>
-        </ul>
+    <section id="scoby">
+      <h2>SCOBY THE CAT 👑</h2>
 
-        <br />
+      <br />
 
-        <div id="scoby-div">
-          <img src="/assets/1.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/2.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/3.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/4.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/5.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/6.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/7.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/8.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/9.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/10.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/11.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/12.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/13.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/14.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/15.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/16.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/17.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/18.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/19.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/20.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/21.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/22.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/23.jpeg" alt="scoby" class="scoby-img" />
-          <img src="/assets/24.jpeg" alt="scoby" class="scoby-img" />
-        </div>
-      </section>
+      <ul>
+        <li>Princess</li>
+        <li>Born in 16/07/2021 🇫🇷</li>
+        <li>Siamese & Birman mix</li>
+      </ul>
+
+      <br />
+
+      <div id="scoby-div">
+        <img src="/assets/1.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/2.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/3.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/4.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/5.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/6.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/7.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/8.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/9.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/10.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/11.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/12.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/13.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/14.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/15.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/16.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/17.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/18.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/19.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/20.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/21.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/22.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/23.jpeg" alt="scoby" class="scoby-img" />
+        <img src="/assets/24.jpeg" alt="scoby" class="scoby-img" />
+      </div>
+    </section>
   </main>
 
   <footer>
